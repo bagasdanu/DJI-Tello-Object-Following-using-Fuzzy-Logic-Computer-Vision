@@ -7,13 +7,13 @@
 
 This project implements an autonomous object-tracking system for the **DJI Tello Drone**. It utilizes **Computer Vision** (OpenCV) to detect objects based on specific colors and applies a **Fuzzy Logic Controller** to smooth the drone's movements (Yaw, Pitch, Throttle) in real-time, providing a more human-like response compared to traditional PID.
 
-## 🎥 Project Demo
+## Project Demo
 
 > **Watch the drone in action:** Tracking a colored object autonomously.
 
 https://github.com/user-attachments/assets/5e86c58f-9971-4242-9b5a-934fbc9f69a2
 
-## 🛠️ Tech Stack & Libraries
+## Tech Stack & Libraries
 
 | Component | Library/Tool | Function |
 |:---|:---|:---|
@@ -22,11 +22,11 @@ https://github.com/user-attachments/assets/5e86c58f-9971-4242-9b5a-934fbc9f69a2
 | **Control Logic** | `scikit-fuzzy` / Custom | Implementation of Fuzzy Membership Functions (Low, Medium, High). |
 | **Visualization** | `matplotlib` | Real-time plotting of error response (optional debug tool). |
 
-## 📂 File Structure & Description
+## File Structure & Description
 
 The project is organized into source code, assets, and legacy files for better maintainability.
 
-### 🧠 Core System (`/src`)
+### Core System (`/src`)
 
 * **`src/main.py`**  
   The main execution script. It connects to the drone, handles the video stream, orchestrates the tracking logic, and sends commands to the Tello. **Run this file to start.**
@@ -40,7 +40,7 @@ The project is organized into source code, assets, and legacy files for better m
 * **`src/fuzzy_logic.py`**  
   The "Brain" of the control system. Unlike standard PID, this file implements **Fuzzy Logic** membership functions (e.g., Close, Ideal, Far) to determine the drone's velocity. It makes the drone's movement smoother and more human-like.
 
-### 🛠️ Utilities (`/src`)
+### Utilities (`/src`)
 
 * **`src/hsv_trackbar.py`**  
   A calibration tool. Run this script to open a window with sliders (trackbars). It allows you to manually tune the **HSV (Hue, Saturation, Value)** lower and upper bounds to find the perfect color detection settings for your specific environment.
@@ -48,12 +48,12 @@ The project is organized into source code, assets, and legacy files for better m
 * **`src/response_monitor.py`**  
   A data visualization tool. It plots the system's response (Error vs. Time) or logs data to analyze stability and correction speed.
 
-### 🗄️ Archives (`/legacy`)
+### Archives (`/legacy`)
 
 * **`legacy/legacy_control.py`**  
   *Experimental/Backup File*. Contains previous iterations of the control algorithms (standard PID tests). Kept for educational reference.
 
-## 🚀 How to Run
+## How to Run
 
 ### 1. Prerequisites
 
