@@ -7,7 +7,7 @@
 
 This project implements an autonomous object-tracking system for the **DJI Tello Drone**. It utilizes **Computer Vision** (OpenCV) to detect objects based on specific colors and applies a **Fuzzy Logic Controller** to smooth the drone's movements (Yaw, Pitch, Throttle) in real-time, providing a more human-like response compared to traditional PID.
 
-## Project Demo
+## Project Demo 
 
 > **Watch the drone in action:** Tracking a colored object autonomously.
 
