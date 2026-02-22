@@ -80,7 +80,7 @@ Connect your laptop to the Tello Wi-Fi and run the main script:
 python src/main.py
 ```
 
-## ⚠️ Safety Precautions
+## Safety Precautions
 
 * **Emergency Stop:** Always be ready to terminate the script (Ctrl+C) or grab the drone if it behaves unexpectedly.
 * **Lighting:** Ensure the environment is well-lit for accurate color detection.
